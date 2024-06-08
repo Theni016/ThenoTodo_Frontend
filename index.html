@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ThenoTodo - Web Application</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="resources/logo.png" class="logo" />
+      <label class="switch">
+        <input
+          type="checkbox"
+          id="dark-mode-toggle"
+          onclick="toggleDarkMode()"
+        />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="container">
+      <div class="appbox">
+        <h1>To-Do <img src="resources/todo.png" /></h1>
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Write your tasks here..."
+          />
+          <button onclick="addTask()">ADD</button>
+        </div>
+        <ul id="list-container">
+          <!-- Tasks will be Added here -->
+        </ul>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

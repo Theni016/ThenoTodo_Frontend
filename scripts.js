@@ -132,7 +132,6 @@ function showTask() {
     })
     .catch((error) => {
       console.error("Error fetching tasks:", error);
-      console.log("Error Fetching");
     });
 }
 
